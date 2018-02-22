@@ -41,8 +41,8 @@ def add_supply_to_winter_holidays(holiday_hash, supply)
       :memorial_day => ["BBQ"]
     }
   }
-  supply = holiday_hash[:winter][:christmas]
-  supply = holiday_hash[:winter][:new_years]
+ holiday_hash[:winter][:christmas] = supply
+   holiday_hash[:winter][:new_years] = supply
 
 end
 
